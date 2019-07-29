@@ -1,0 +1,26 @@
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
+
+  &__logo-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+
+    &__toggle {
+      display: none;
+    }
+  }
+}

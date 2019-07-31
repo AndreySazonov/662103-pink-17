@@ -1,8 +1,10 @@
 .advantages {
   background-color: @gray--light;
+  text-align: center;
+  margin: 0 auto;
 
   &__list {
-    list-style: none;
+    .list-reset;
   }
 
   &__title {
@@ -15,5 +17,58 @@
     color: @paragraph;
     font-size: 14px;
     line-height: 24px;
+  }
+
+  &__phone__image {
+    display: block;
+    min-width: 157px;
+    margin: 0 auto;
+  }
+
+  &__image--second {
+    display: none;
+  }
+
+  &__image--third {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+
+    &__image--first {
+      display: block;
+    }
+
+    &__image--second {
+      display: block;
+    }
+
+    &__image--third {
+      display: block;
+    }
+
+    &__list {
+      display: ;
+    }
+
+    &__image {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &__list {
+      display: flex;
+    }
   }
 }

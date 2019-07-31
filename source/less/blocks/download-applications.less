@@ -1,5 +1,17 @@
 .download-applications {
+  display: block;
   background-color: @gray--darken;
+  min-height: 389px;
+  width: 320px;
+  margin: 0 auto;
+
+  &--title {
+    color: @white;
+    font-weight: 300;
+    padding: 0 50px;
+    text-align: center;
+    display: none;
+  }
 
   &__toggle {
     display: block;
@@ -8,10 +20,18 @@
     font-size: 18px;
     line-height: 18px;
     font-weight: bold;
+    text-align: center;
+  }
+
+  &__store {
+    display: flex;
+    justify-content: center;
   }
 
   &__icon {
-    display: block;
+    display: flex;
+    margin-right: 35px;
+    align-items: flex-end;
   }
 
   &__info {
@@ -20,5 +40,17 @@
     font-size: 14px;
     line-height: 24px;
     font-weight: 300;
+    text-align: center;
   }
+}
+
+@media (min-width: @tablet-width) {
+  .download-applications {
+    background-color: transparent;
+
+  &--title {
+    display: block;
+  }
+  }
+
 }

@@ -1,8 +1,7 @@
 .download-applications {
   display: block;
   background-color: @gray--darken;
-  min-height: 389px;
-  width: 320px;
+  min-height: 271px;
   margin: 0 auto;
 
   &__title {
@@ -47,9 +46,16 @@
 @media (min-width: @tablet-width) {
   .download-applications {
     background-color: transparent;
+    width: 45%;
 
     &__title {
       display: block;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download-applications {
+    width: 31%;
   }
 }

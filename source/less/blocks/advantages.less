@@ -24,6 +24,10 @@
   .advantages {
     display: flex;
     flex-direction: row-reverse;
+
+    &__list {
+      width: 50%;
+    }
   }
 }
 
@@ -32,13 +36,14 @@
     flex-wrap: wrap;
     flex-direction: column-reverse;
 
-    &__image {
+    &__list {
+      width: 100%;
       display: flex;
       justify-content: space-around;
     }
 
-    &__list {
-      display: flex;
+    &__item {
+      width: 25%;
     }
   }
 }

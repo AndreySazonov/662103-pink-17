@@ -1,0 +1,33 @@
+.phone-image {
+
+  &__sort {
+    display: block;
+    min-width: 157px;
+    margin: 0 auto;
+  }
+
+  &--second {
+    display: none;
+  }
+
+  &--third {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .phone-image {
+
+    &--first {
+      display: block;
+    }
+
+    &--second {
+      display: block;
+    }
+
+    &--third {
+      display: block;
+    }
+  }
+}

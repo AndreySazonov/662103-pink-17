@@ -39,5 +39,19 @@
   .reviews {
     display: flex;
     flex-wrap: wrap;
+
+    &__list {
+      width: 47%;
+      margin-bottom: 3%;
+      margin-right: 3%;
+    }
+  }
+}
+
+@media(min-width: @desktop-width) {
+  .reviews {
+    &__list {
+      width: 30%;
+    }
   }
 }

@@ -1,0 +1,35 @@
+.research {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .research {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 52px;
+    &__image {
+      width: 36%;
+    }
+
+    &__intro {
+      font-size: 14px;
+      width: 45%;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    &__text {
+      color: @paragraph;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &__source {
+      color: @specify;
+      text-decoration: underline;
+    }
+  }
+}

@@ -3,55 +3,63 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet"> -->
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href=#>
-        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" height="" width="" alt="Логотип «Пинк»">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-      <section class="index-prewie">
-        <img class="index-prewie__phone-in-hand" height="" width="" src="img/iphone-hand-mobile@1x.png" alt="Айфон в руке">
-      </section>
-      <section class="download-applications">
-        <a class="download-applications__toggle" href="#">Скачать приложение</a>
-        <a class="download-applications__icon" href="#">
-          <img class="download-applications--apple" height="" width="" src="img/logo-apple.svg" alt="Иконка Apple">
-        </a>
-        <a class="download-applications__icon" href="#">
-          <img class="download-applications--android" height="" width="" src="img/logo-android.svg" alt="Иконка Android">
-        </a>
-        <a class="download-applications__icon" href="#">
-          <img class="download-applications--windows" height="" width="" src="img/logo-microsoft.svg" alt="Иконка Windows">
-        </a>
-        <span class=download-applications__info>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</span>
-      </section>
+        <nav class="main-nav container">
+          <div class="main-nav__logo-wrapper">
+            <a class="main-nav__logo" href=#>
+              <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" height="22px" width="75px" alt="Логотип «Пинк»">
+            </a>
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+          </div>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      <div class="preview-applications">
+        <section class="index-preview">
+          <img class="index-preview__phone-in-hand" height="314px" width="" src="img/iphone-hand-mobile@1x.png" alt="Айфон в руке">
+        </section>
+        <section class="download-applications">
+            <h1 class="download-applications__title">Взгляните на жизнь иначе!</h1>
+            <a class="download-applications__toggle" href="#">Скачать приложение</a>
+            <div class="download-applications__store">
+              <a class="download-applications__icon" href="#">
+                <img class="download-applications__apple" height="" width="" src="img/logo-apple.svg" alt="Иконка Apple">
+              </a>
+              <a class="download-applications__icon" href="#">
+                <img class="download-applications__android" height="" width="" src="img/logo-android.svg" alt="Иконка Android">
+              </a>
+              <a class="download-applications__icon" href="#">
+                <img class="download-applications__windows" height="" width="" src="img/logo-microsoft.svg" alt="Иконка Windows">
+              </a>
+            </div>
+            <span class=download-applications__info>Доступно для iPhone, iPad, Android,
+              Windows Phone, OS X, Windows 8</span>
+        </section>
+      </div>
     </header>
     <main class="page-main">
-      <section class="doubts">
+      <section class="doubts container">
         <p class="doubts__intro">Устали от серости мегаполиса?</p>
         <p class="doubts__intro">Нам есть, что вам предложить!</p>
       </section>
-      <!-- Можно объединить оба section в один блок -->
-      <section class="advantages">
+        <!-- Можно объединить оба section в один блок -->
+      <section class="advantages container">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
@@ -70,9 +78,57 @@
               делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img class="advantages__image" height="" width="" src="img/iphone-screen-mobile@1x.png" alt="Айфон со смайлом">
+        <div class="advantages__image phone-image">
+          <img class="phone-image__sort phone-image--first" height="" width="" src="img/iphone-screen-mobile@1x.png" alt="Айфон со смайлом">
+          <img class="phone-image__sort phone-image--second" height="" width="" src="img/iphone-screen-mobile@1x.png" alt="Айфон со смайлом">
+          <img class="phone-image__sort phone-image--third" height="" width="" src="img/iphone-screen-mobile@1x.png" alt="Айфон со смайлом">
+        </div>
+      </section>
+      <section class="research container">
+        <img class="research__image" height="276px" width="238px" src="img/icon-timer.svg" alt="Таймер 24 часа">
+        <div class="research__intro">
+          <h2 class="research__title">Эффект<br class="carryover"> на 24 часа!</h2>
+          <p class="research__text">Британские ученые провели исследования и доказали,
+            что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="research_link" href="#">
+            <p class="research__source">Узнать больше об исследовании</p>
+          </a>
+        </div>
+      </section>
+      <section class="comment container">
+        <div class="comment__author">
+          <div class="comment__author-name">Николай Петров</div>
+          <p class="comment__author-info">25 лет, водитель трамвая</p>
+        </div>
+        <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому
+          взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в
+          комментариях к выложенной фотографии!»</p>
       </section>
       <!-- Остальная часть main в красной зоне - пока оставляем -->
     </main>
+    <footer class="page-footer footer-index container">
+      <a class="page-footer__logo" href="logo.html">
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" height="" width="" alt="Логотип «Пинк»">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">Мы на YouTube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано:</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="copyright__image" height="" width="" src="" alt="Логотип htmlacademy">
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

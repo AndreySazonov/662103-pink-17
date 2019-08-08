@@ -1,8 +1,10 @@
 .advantages {
   background-color: @gray--light;
+  text-align: center;
+  margin: 0 auto;
 
   &__list {
-    list-style: none;
+    .list-reset;
   }
 
   &__title {
@@ -15,5 +17,36 @@
     color: @paragraph;
     font-size: 14px;
     line-height: 24px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    display: flex;
+    flex-direction: row-reverse;
+
+    &__list {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    width: auto;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+
+    &__list {
+      width: 940px;
+      margin: 0 auto;
+      padding: 0 10px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &__item {
+      width: 25%;
+    }
   }
 }

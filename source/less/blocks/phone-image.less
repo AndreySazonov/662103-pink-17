@@ -1,0 +1,45 @@
+.phone-image {
+  display: block;
+
+  &__sort {
+    display: block;
+    min-width: 157px;
+    margin: 0 auto;
+  }
+
+  &--second {
+    display: none;
+  }
+
+  &--third {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .phone-image {
+    width: 45%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .phone-image {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+
+    &--first {
+      display: block;
+    }
+
+    &--second {
+      display: block;
+    }
+
+    &--third {
+      display: block;
+    }
+  }
+}

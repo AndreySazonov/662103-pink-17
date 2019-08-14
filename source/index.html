@@ -8,12 +8,13 @@
   </head>
   <body>
     <header class="page-header">
-        <nav class="main-nav container">
+      <div class="page-header__fonts">
+        <nav class="main-nav main-nav--closed main-nav--nojs container">
           <div class="main-nav__logo-wrapper">
             <a class="main-nav__logo" href=#>
               <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" height="22px" width="75px" alt="Логотип «Пинк»">
             </a>
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           </div>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -30,26 +31,27 @@
             </li>
           </ul>
         </nav>
+      </div>
       <div class="preview-applications">
         <section class="index-preview">
           <img class="index-preview__phone-in-hand" height="314px" width="" src="img/iphone-hand-mobile@1x.png" alt="Айфон в руке">
         </section>
         <section class="download-applications">
-            <h1 class="download-applications__title">Взгляните на жизнь иначе!</h1>
-            <a class="download-applications__toggle" href="#">Скачать приложение</a>
-            <div class="download-applications__store">
-              <a class="download-applications__icon" href="#">
-                <img class="download-applications__apple" height="" width="" src="img/logo-apple.svg" alt="Иконка Apple">
-              </a>
-              <a class="download-applications__icon" href="#">
-                <img class="download-applications__android" height="" width="" src="img/logo-android.svg" alt="Иконка Android">
-              </a>
-              <a class="download-applications__icon" href="#">
-                <img class="download-applications__windows" height="" width="" src="img/logo-microsoft.svg" alt="Иконка Windows">
-              </a>
-            </div>
-            <span class=download-applications__info>Доступно для iPhone, iPad, Android,
-              Windows Phone, OS X, Windows 8</span>
+          <h1 class="download-applications__title">Взгляните на жизнь иначе!</h1>
+          <a class="download-applications__toggle" href="#">Скачать приложение</a>
+          <div class="download-applications__store">
+            <a class="download-applications__icon" href="#">
+              <img class="download-applications__apple" height="" width="" src="img/logo-apple.svg" alt="Иконка Apple">
+            </a>
+            <a class="download-applications__icon" href="#">
+              <img class="download-applications__android" height="" width="" src="img/logo-android.svg" alt="Иконка Android">
+            </a>
+            <a class="download-applications__icon" href="#">
+              <img class="download-applications__windows" height="" width="" src="img/logo-microsoft.svg" alt="Иконка Windows">
+            </a>
+          </div>
+          <span class=download-applications__info>Доступно для iPhone, iPad, Android,
+            Windows Phone, OS X, Windows 8</span>
         </section>
       </div>
     </header>
@@ -130,5 +132,21 @@
         </a>
       </div>
     </footer>
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
   </body>
 </html>

@@ -1,11 +1,16 @@
 .preview-applications {
   display: flex;
   flex-direction: column;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: -67px;
 }
 
 @media (min-width: @tablet-width) {
   .preview-applications {
     flex-direction: row-reverse;
+    padding-bottom: 110px;
   }
 }
 
@@ -14,5 +19,6 @@
     width: 940px;
     margin: 0 auto;
     padding: 0 10px;
+    background: none;
   }
 }

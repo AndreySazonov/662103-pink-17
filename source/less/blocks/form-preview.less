@@ -1,4 +1,4 @@
-.photo-preview {
+.form-preview {
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -9,6 +9,7 @@
     display: block;
     color: @header-text;
     font-size: 24px;
+    line-height: 29px;
     font-weight: 300;
     margin: 0 auto;
     padding: 0 10px;
@@ -18,8 +19,8 @@
 }
 
 @media (min-width: @tablet-width) {
-  .photo-preview {
-    padding-bottom: 140px;
+  .form-preview {
+    padding-bottom: 81px;
 
     &__title {
       font-size: 50px;
@@ -30,13 +31,12 @@
 }
 
 @media (min-width: @desktop-width) {
-  .photo-preview {
+  .form-preview {
     background: none;
     margin-top: 0;
     min-height: 394px;
 
     &__title {
-      padding: 0 277px;
       padding-top: 66px;
     }
   }

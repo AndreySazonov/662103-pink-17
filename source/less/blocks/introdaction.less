@@ -1,8 +1,34 @@
 .introdaction {
+  padding-bottom: 49px;
+
   &__intro {
     font-size: 14px;
     line-height: 30px;
     color: @paragraph;
     text-align: center;
+    margin: 0;
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .introdaction {
+    padding-bottom: 76px;
+
+    &__intro {
+      font-size: 18px;
+      padding: 0 26px;
+      padding-top: 46px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .introdaction {
+    padding-bottom: 88px;
+
+    &__intro {
+      padding: 0 150px;
+    }
   }
 }

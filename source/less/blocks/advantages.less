@@ -2,21 +2,37 @@
   background-color: @gray--light;
   text-align: center;
   margin: 0 auto;
+  padding-top: 79px;
+  background-image: url(../img/bg-triangle-white-2.svg);
+  background-repeat: no-repeat;
+  background-size: 101% auto;
+  background-position: 50% 0;
 
   &__list {
     .list-reset;
+  }
+
+  &__item {
+    margin-bottom: 32px;
   }
 
   &__title {
     color: @black;
     font-size: 18px;
     line-height: 24px;
+    margin: 0;
+    margin-bottom: 11px;
   }
 
   &__discription {
     color: @paragraph;
     font-size: 14px;
     line-height: 24px;
+    margin: 0;
+  }
+
+  &--carryover {
+    display: none;
   }
 }
 
@@ -24,9 +40,20 @@
   .advantages {
     display: flex;
     flex-direction: row-reverse;
+    padding-top: 74px;
+    padding-bottom: 6px;
 
     &__list {
       width: 50%;
+    }
+
+    &__item {
+      text-align: left;
+      margin-bottom: 36px;
+    }
+
+    &--carryover {
+      display: block;
     }
   }
 }
@@ -38,15 +65,48 @@
     flex-direction: column-reverse;
 
     &__list {
+      background-color: @gray--light;
       width: 940px;
       margin: 0 auto;
       padding: 0 10px;
       display: flex;
       justify-content: space-around;
+      position: relative;
+      padding-top: 57px;
+      margin-top: -96px;
     }
 
     &__item {
-      width: 25%;
+      width: 26%;
+      text-align: center;
+      padding: 0 36px;
+
+      &:first-child {
+        padding-left: 27px;
+      }
+
+      &:last-child {
+        padding-right: 27px;
+      }
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 30px;
+      margin-bottom: 24px;
+
+      &:first-child {
+        padding: 0 10px;
+      }
+    }
+
+    &__discription {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    &--carryover {
+      display: none;
     }
   }
 }

@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__fonts">
+      <div class="main-nav-wrapper">
         <nav class="main-nav main-nav--closed main-nav--nojs container">
           <div class="main-nav__logo-wrapper">
             <a class="main-nav__logo" href=#>
@@ -72,7 +72,7 @@
           <li class="advantages__item">
             <h3 class="advantages__title">Меняет мир вокруг</h3>
             <p class="advantages__discription">Сделайте снимок и украсьте его
-              смайликом или текстовой подписью, чтобы<br class="advantages--carryover"> усилить эффект</p>
+              смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
           </li>
           <li class="advantages__item">
             <h3 class="advantages__title">Заводит новых друзей</h3>
@@ -81,21 +81,19 @@
           </li>
         </ul>
         <div class="advantages__image phone-image">
-          <img class="phone-image__sort phone-image--first" height="" width="" src="img/iphone-screen-mobile@1x.png" alt="Айфон со смайлом">
-          <img class="phone-image__sort phone-image--second" height="" width="" src="img/iphone-screen-mobile@1x.png" alt="Айфон со смайлом">
-          <img class="phone-image__sort phone-image--third" height="" width="" src="img/iphone-screen-mobile@1x.png" alt="Айфон со смайлом">
+          <img class="phone-image__sort phone-image__black-white" height="" width="" src="img/iphone-screen-mobile@1x.png" alt="Айфон со смайлом">
+          <img class="phone-image__sort phone-image__color" height="" width="" src="img/iphone-screen-mobile@1x.png" alt="Айфон со смайлом">
+          <img class="phone-image__sort phone-image__color-smile" height="" width="" src="img/iphone-screen-mobile@1x.png" alt="Айфон со смайлом">
         </div>
       </section>
-      <div class="research-fonts">
+      <div class="research-wrapper">
         <section class="research container">
           <img class="research__image" height="276px" width="238px" src="img/icon-timer.svg" alt="Таймер 24 часа">
           <div class="research__intro">
-            <h2 class="research__title">Эффект<br class="research--carryover"> на 24 часа!</h2>
+            <h2 class="research__title">Эффект на&nbsp;24 часа!</h2>
             <p class="research__text">Британские ученые провели исследования и доказали,
-              <br class="research--carryover-desk">что положительный эффект<br class="research--carryover"> от использования приложения длится целые сутки!</p>
-            <a class="research_link" href="#">
-              <p class="research__source">Узнать больше об исследовании</p>
-            </a>
+              что&nbsp;положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
+            <a class="research__link" href="#">Узнать больше об исследовании</a>
           </div>
         </section>
       </div>
@@ -110,7 +108,7 @@
       </section>
       <!-- Остальная часть main в красной зоне - пока оставляем -->
     </main>
-    <footer class="page-footer footer-index container">
+    <footer class="page-footer page-footer-index container">
       <a class="page-footer__logo" href="logo.html">
         <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" height="" width="" alt="Логотип «Пинк»">
       </a>
@@ -134,21 +132,6 @@
         </a>
       </div>
     </footer>
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-  </script>
+  <script src="js/script.js"></script>
   </body>
 </html>

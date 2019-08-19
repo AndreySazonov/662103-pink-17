@@ -8,28 +8,30 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav container">
-        <div class="main-nav__logo-wrapper">
-          <a class="main-nav__logo" href=#>
-            <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" height="22px" width="75px" alt="Логотип «Пинк»">
-          </a>
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-        </div>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="main-nav-wrapper">
+        <nav class="main-nav main-nav--closed main-nav--nojs container">
+          <div class="main-nav__logo-wrapper">
+            <a class="main-nav__logo" href=#>
+              <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" height="22px" width="75px" alt="Логотип «Пинк»">
+            </a>
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          </div>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <section class="photo-preview">
         <h1 class="photo-preview__title">Фотографии пользователей</h1>
       </section>
@@ -37,8 +39,10 @@
     <main class="page-main-photo">
       <section class="introdaction container">
         <p class="introdaction__intro">Взгляните на фотографии,
+          которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <!-- <p class="introdaction__intro">Взгляните на фотографии,
           которые выкладывают пользователи!</p>
-        <p class="introdaction__intro">Видите, как не хватает ваших?</p>
+        <p class="introdaction__intro">Видите, как не хватает ваших?</p> -->
       </section>
       <section class="reviews container">
         <h2 class="visually-hidden">Комментарии наших пользователей</h2>
@@ -46,65 +50,93 @@
           <a class="reviews__users-photo reviews__users-photo--panorama" href="#">
             <img class="reviews__photo" height="" width="" src="img/panorama-mobile@1x.jpg" alt="Фотография от Анны">
           </a>
-          <div class="reviews__author">Анна</div>
-          <time class="reviews__date">(5 минут назад)</time>
-          <p class="reviews__text">Прыгать или нет? Напишите в коментарии
-            свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <p class="reviews__assessment">Нравится: 215</p>
+          <article class="reviews__block reviews__block--panorama">
+            <div class="reviews__info">
+              <div class="reviews__author">Анна</div>
+              <time class="reviews__date">(5 минут назад)</time>
+            </div>
+            <p class="reviews__text">Прыгать или нет? Напишите в коментарии
+              свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="reviews__assessment">Нравится: 215</p>
+          </article>
         </div>
         <div class="reviews__list post-blog">
           <a class="reviews__users-photo" href="#">
             <img class="reviews__photo" height="" width="" src="img/photo-car-mobile@1x.jpg" alt="Фотография от Левона">
           </a>
-          <div class="reviews__author">Левон</div>
-          <time class="reviews__date">(5 часов назад)</time>
-          <p class="reviews__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <p class="reviews__assessment">Нравится: 356</p>
+          <article class="reviews__block">
+            <div class="reviews__info">
+              <div class="reviews__author">Левон</div>
+              <time class="reviews__date">(5 часов назад)</time>
+            </div>
+            <p class="reviews__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <p class="reviews__assessment">Нравится: 356</p>
+          </article>
         </div>
         <div class="reviews__list post-blog">
           <a class="reviews__users-photo" href="#">
             <img class="reviews__photo" height="" width="" src="img/photo-drumset-mobile@1x.jpg" alt="Фотография от Антона">
           </a>
-          <div class="reviews__author">Антон</div>
-          <time class="reviews__date">(12 часов назад)</time>
-          <p class="reviews__text">Соседи будут рады!</p>
-          <p class="reviews__assessment">Нравится: 666</p>
+          <article class="reviews__block">
+            <div class="reviews__info">
+              <div class="reviews__author">Антон</div>
+              <time class="reviews__date">(12 часов назад)</time>
+            </div>
+            <p class="reviews__text">Соседи будут рады!</p>
+            <p class="reviews__assessment">Нравится: 666</p>
+          </article>
         </div>
         <div class="reviews__list post-blog">
           <a class="reviews__users-photo" href="#">
             <img class="reviews__photo" height="" width="" src="img/photo-window-mobile@1x.jpg" alt="Фотография от Бориса">
           </a>
-          <div class="reviews__author">Борис</div>
-          <time class="reviews__date">(20 часов назад)</time>
-          <p class="reviews__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <p class="reviews__assessment">Нравится: 215</p>
+          <article class="reviews__block">
+            <div class="reviews__info">
+              <div class="reviews__author">Борис</div>
+              <time class="reviews__date">(20 часов назад)</time>
+            </div>
+            <p class="reviews__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <p class="reviews__assessment">Нравится: 215</p>
+          </article>
         </div>
         <div class="reviews__list post-blog">
           <a class="reviews__users-photo" href="#">
             <img class="reviews__photo" height="" width="" src="img/photo-fair-mobile@1x.jpg" alt="Фотография от Сергея">
           </a>
-          <div class="reviews__author">Сергей</div>
-          <time class="reviews__date">(25 часов назад)</time>
-          <p class="reviews__text">Самая кубанская в мире!</p>
-          <p class="reviews__assessment">Нравится: 4</p>
+          <article class="reviews__block">
+            <div class="reviews__info">
+              <div class="reviews__author">Сергей</div>
+              <time class="reviews__date">(25 часов назад)</time>
+            </div>
+            <p class="reviews__text">Самая кубанская в мире!</p>
+            <p class="reviews__assessment">Нравится: 4</p>
+          </article>
         </div>
         <div class="reviews__list post-blog">
           <a class="reviews__users-photo" href="#">
             <img class="reviews__photo" height="" width="" src="img/photo-pov-mobile@1x.jpg" alt="Фотография от Максима">
           </a>
-          <div class="reviews__author">Максим</div>
-          <time class="reviews__date">(40 часов назад)</time>
-          <p class="reviews__text">Где снег-то?</p>
-          <p class="reviews__assessment">Нравится: 150</p>
+          <article class="reviews__block">
+            <div class="reviews__info">
+              <div class="reviews__author">Максим</div>
+              <time class="reviews__date">(40 часов назад)</time>
+            </div>
+            <p class="reviews__text">Где снег-то?</p>
+            <p class="reviews__assessment">Нравится: 150</p>
+          </article>
         </div>
         <div class="reviews__list post-blog">
           <a class="reviews__users-photo" href="#">
             <img class="reviews__photo" height="" width="" src="img/photo-wing-mobile@1x.jpg" alt="Фотография от Надежды">
           </a>
-          <div class="reviews__author">Максим</div>
-          <time class="reviews__date">(45 часов назад)</time>
-          <p class="reviews__text">Всем GM и взаимные лайки!</p>
-          <p class="reviews__assessment">Нравится: 2560</p>
+          <article class="reviews__block">
+            <div class="reviews__info">
+              <div class="reviews__author">Надежда</div>
+              <time class="reviews__date">(45 часов назад)</time>
+            </div>
+            <p class="reviews__text">Всем GM и взаимные лайки!</p>
+            <p class="reviews__assessment">Нравится: 2560</p>
+          </article>
         </div>
       </section>
       <!-- Остальная часть main в красной зоне - пока оставляем -->
@@ -133,3 +165,6 @@
         </a>
       </div>
     </footer>
+  <script src="js/script.js"></script>
+  </body>
+</html>

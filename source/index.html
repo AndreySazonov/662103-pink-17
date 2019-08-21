@@ -12,7 +12,11 @@
         <nav class="main-nav main-nav--closed main-nav--nojs container">
           <div class="main-nav__logo-wrapper">
             <a class="main-nav__logo" href=#>
-              <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" height="22px" width="75px" alt="Логотип «Пинк»">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg" height="40px" width="147px" alt="Логотип «Пинк»">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg" height="40px" width="147px" alt="Логотип «Пинк»">
+                <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" height="22px" width="75px" alt="Логотип «Пинк»">
+              </picture>
             </a>
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           </div>
@@ -34,7 +38,11 @@
       </div>
       <div class="preview-applications">
         <section class="index-preview">
-          <img class="index-preview__phone-in-hand" height="314px" width="" src="img/iphone-hand-mobile@1x.png" alt="Айфон в руке">
+          <picture>
+            <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+            <img class="index-preview__phone-in-hand" height="314px" width="" src="img/iphone-hand-mobile@1x.png"
+              srcset="img/iphone-hand-mobile@2x.png 2x" alt="Айфон в руке">
+          </picture>
         </section>
         <section class="download-applications">
           <h1 class="download-applications__title">Взгляните на жизнь иначе!</h1>
@@ -53,6 +61,7 @@
           <span class=download-applications__info>Доступно для iPhone, iPad, Android,
             Windows Phone, OS X, Windows 8</span>
         </section>
+        <div class="preview-photo"></div>
       </div>
     </header>
     <main class="page-main">

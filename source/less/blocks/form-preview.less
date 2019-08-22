@@ -5,6 +5,10 @@
   margin-top: -67px;
   min-height: 237px;
 
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+
   &__title {
     display: block;
     color: @header-text;
@@ -20,12 +24,23 @@
 
 @media (min-width: @tablet-width) {
   .form-preview {
-    padding-bottom: 81px;
+    padding-bottom: 35px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    width: auto;
+    min-height: 729px;
+    margin-top: -129px;
+    background-size: auto;
+    background-position: center;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
 
     &__title {
       font-size: 50px;
       line-height: 59px;
-      padding-top: 138px;
+      padding-top: 199px;
     }
   }
 }
@@ -38,6 +53,8 @@
 
     &__title {
       padding-top: 66px;
+      padding-left: 60px;
+      padding-right: 60px;
     }
   }
 }

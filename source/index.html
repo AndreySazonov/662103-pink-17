@@ -12,7 +12,11 @@
         <nav class="main-nav main-nav--closed main-nav--nojs container">
           <div class="main-nav__logo-wrapper">
             <a class="main-nav__logo" href=#>
-              <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" height="22px" width="75px" alt="Логотип «Пинк»">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg" height="40px" width="147px" alt="Логотип «Пинк»">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg" height="40px" width="147px" alt="Логотип «Пинк»">
+                <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" height="22px" width="75px" alt="Логотип «Пинк»">
+              </picture>
             </a>
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           </div>
@@ -32,9 +36,12 @@
           </ul>
         </nav>
       </div>
-      <div class="preview-applications">
+      <div class="preview-applications preview-photo">
         <section class="index-preview">
-          <img class="index-preview__phone-in-hand" height="314px" width="" src="img/iphone-hand-mobile@1x.png" alt="Айфон в руке">
+          <picture>
+            <img class="index-preview__phone-in-hand" height="314px" width="" src="img/iphone-hand-mobile@1x.png"
+            srcset="img/iphone-hand-mobile@2x.png 2x" alt="Айфон в руке">
+          </picture>
         </section>
         <section class="download-applications">
           <h1 class="download-applications__title">Взгляните на жизнь иначе!</h1>
@@ -60,7 +67,6 @@
         <p class="doubts__intro">Устали от серости мегаполиса?</p>
         <p class="doubts__intro">Нам есть, что вам предложить!</p>
       </section>
-        <!-- Можно объединить оба section в один блок -->
       <section class="advantages container">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <ul class="advantages__list">
@@ -81,14 +87,22 @@
           </li>
         </ul>
         <div class="advantages__image phone-image">
-          <img class="phone-image__sort phone-image__black-white" height="" width="" src="img/iphone-screen-mobile@1x.png" alt="Айфон со смайлом">
-          <img class="phone-image__sort phone-image__color" height="" width="" src="img/iphone-screen-mobile@1x.png" alt="Айфон со смайлом">
-          <img class="phone-image__sort phone-image__color-smile" height="" width="" src="img/iphone-screen-mobile@1x.png" alt="Айфон со смайлом">
+          <picture>
+            <img class="phone-image__sort phone-image__black-white" height="382px" width="186px" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png" alt="Айфон с чёрно-белой картинкой">
+          </picture>
+          <picture>
+            <img class="phone-image__sort phone-image__color" height="382px" width="186px" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png" alt="Айфон c цветной картинкой">
+          </picture>
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+            <img class="phone-image__sort phone-image__color-smile" height="320px" width="157px" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png" alt="Айфон со смайлом">
+          </picture>
         </div>
       </section>
       <div class="research-wrapper">
         <section class="research container">
-          <img class="research__image" height="276px" width="238px" src="img/icon-timer.svg" alt="Таймер 24 часа">
+          <img class="research__image" height="276px" width="238px" src="img/icon-timer-2.svg" alt="Таймер 24 часа">
           <div class="research__intro">
             <h2 class="research__title">Эффект на&nbsp;24 часа!</h2>
             <p class="research__text">Британские ученые провели исследования и доказали,

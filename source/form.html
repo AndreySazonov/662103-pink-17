@@ -12,7 +12,11 @@
         <nav class="main-nav main-nav--closed main-nav--nojs container">
           <div class="main-nav__logo-wrapper">
             <a class="main-nav__logo" href=#>
-              <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" height="22px" width="75px" alt="Логотип «Пинк»">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg" height="40px" width="147px" alt="Логотип «Пинк»">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg" height="40px" width="147px" alt="Логотип «Пинк»">
+                <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" height="22px" width="75px" alt="Логотип «Пинк»">
+              </picture>
             </a>
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           </div>

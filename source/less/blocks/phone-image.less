@@ -19,7 +19,12 @@
 
 @media (min-width: @tablet-width) {
   .phone-image {
-    width: 45%;
+    margin-right: 42px;
+    margin-top: -70px;
+
+    &__sort {
+      min-width: 268px;
+    }
   }
 }
 
@@ -30,6 +35,13 @@
     padding: 0 10px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
+    &__sort {
+      min-width: 292px;
+      margin: 0;
+      margin-left: 5px;
+    }
 
     &__black-white {
       display: block;

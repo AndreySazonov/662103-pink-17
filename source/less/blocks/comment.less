@@ -2,6 +2,12 @@
   position: relative;
   margin-top: -42px;
   background-color: @white;
+  padding-bottom: 66px;
+  margin-bottom: 20px;
+
+  &__switcher {
+    display: none;
+  }
 
   &__author {
     padding-top: 43px;
@@ -26,13 +32,33 @@
     color: @paragraph;
     padding-top: 1px;
   }
+
+  &__nav {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+
+.comment #comment-radio-1:checked~.comment__nav label[for=comment-radio-1],
+.comment #comment-radio-2:checked~.comment__nav label[for=comment-radio-2],
+.comment #comment-radio-3:checked~.comment__nav label[for=comment-radio-3] {
+  background-color: @white;
+  border: 3px solid @gray--dark;
+  opacity: 1;
 }
 
 @media (min-width: @tablet-width) {
   .comment {
-    display: flex;
-    flex-direction: column-reverse;
     margin: 0;
+
+    &__item {
+      display: flex;
+      flex-direction: column-reverse;
+    }
 
     &__author {
       padding-top: 35px;
@@ -60,6 +86,7 @@
   .comment {
     margin: 0 auto;
     padding-top: 116px;
+    padding-bottom: 34px;
 
     &__text {
       padding: 0 80px;

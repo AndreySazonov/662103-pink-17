@@ -7,6 +7,14 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <svg version="1.1" style="display: none">
+      <symbol viewBox="-82.357 4.875 21.698 16.09" id="icon-yes">
+        <path d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z"/>
+      </symbol>
+      <symbol viewBox="0 0 26.752 26.752" id="icon-no">
+        <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+      </symbol>
+    </svg>
     <header class="page-header">
       <div class="main-nav-wrapper">
         <nav class="main-nav main-nav--closed main-nav--nojs container">
@@ -112,15 +120,146 @@
         </section>
       </div>
       <section class="comment container">
-        <div class="comment__author">
-          <div class="comment__author-name">Николай Петров</div>
-          <p class="comment__author-info">25 лет, водитель трамвая</p>
+        <input class="comment__switcher" type="radio" name="comment" id="comment-radio-1" checked>
+        <input class="comment__switcher" type="radio" name="comment" id="comment-radio-2">
+        <input class="comment__switcher" type="radio" name="comment" id="comment-radio-3">
+        <div class="comment__item comment__item--petrov">
+          <div class="comment__author">
+            <div class="comment__author-name">Николай Петров</div>
+            <p class="comment__author-info">25 лет, водитель трамвая</p>
+          </div>
+          <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому
+            взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в
+            комментариях к выложенной фотографии!»</p>
         </div>
-        <p class="comment__text">«Это приложение перевернуло мой мир и позволило по-новому
-          взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в
-          комментариях к выложенной фотографии!»</p>
+        <div class="slider-items comment__nav">
+          <label class="slider-items__btn" for="comment-radio-1">1</label>
+          <label class="slider-items__btn" for="comment-radio-2">2</label>
+          <label class="slider-items__btn" for="comment-radio-3">3</label>
+        </div>
       </section>
-      <!-- Остальная часть main в красной зоне - пока оставляем -->
+      <section class="price">
+        <div class="price__wrapper">
+          <div class="price__items">
+            <input class="price__switcher" type="radio" name="price" id="price-radio-1">
+            <input class="price__switcher" type="radio" name="price" id="price-radio-2" checked>
+            <input class="price__switcher" type="radio" name="price" id="price-radio-3">
+            <table class="price__list">
+              <thead class="price__list-head">
+                <tr>
+                  <th class="price__value price__value--empty"></th>
+                  <th class="price__value">
+                    <span class="price__value-name">База</span>
+                    <p class="price__tag">1,99 USD</p>
+                  </th>
+                  <th class="price__value price__value--flag">
+                    <span class="price__value-name">Стандарт</span>
+                    <p class="price__tag">3,99 USD</p>
+                  </th>
+                  <th class="price__value">
+                    <span class="price__value-name">Анлим</span>
+                    <p class="price__tag">9,99 USD</p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="price__list-body">
+                <tr>
+                  <td class="price__field price__field--empty price__field--fill">
+                    Розовый фильтр
+                  </td>
+                  <td class="price__field price__field--ok">
+                    <div class="price__services">
+                      <span class="price__name">Розовый фильтр</span>
+                      <svg class="price__icon-ok" width="31px" height="21px">
+                        <use xlink:href="#icon-yes"></use>
+                      </svg>
+                    </div>
+                  </td>
+                  <td class="price__field price__field--ok">
+                    <div class="price__services">
+                      <span class="price__name">Розовый фильтр</span>
+                      <svg class="price__icon-ok" width="31px" height="21px">
+                        <use xlink:href="#icon-yes"></use>
+                      </svg>
+                    </div>
+                  </td>
+                  <td class="price__field price__field--ok">
+                    <div class="price__services">
+                      <span class="price__name">Розовый фильтр</span>
+                      <svg class="price__icon-ok" width="31px" height="21px">
+                        <use xlink:href="#icon-yes"></use>
+                      </svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="price__field price__field--empty price__field--fill">
+                    Смайлики
+                  </td>
+                  <td class="price__field price__field--cancel">
+                    <div class="price__services">
+                      <span class="price__name">Смайлики</span>
+                      <svg class="price__icon-no" width="27px" height="26px">
+                        <use xlink:href="#icon-no"></use>
+                      </svg>
+                    </div>
+                  </td>
+                  <td class="price__field price__field--ok">
+                    <div class="price__services">
+                      <span class="price__name">Смайлики</span>
+                      <svg class="price__icon-ok" width="31px" height="21px">
+                        <use xlink:href="#icon-yes"></use>
+                      </svg>
+                    </div>
+                  </td>
+                  <td class="price__field price__field--ok">
+                    <div class="price__services">
+                      <span class="price__name">Смайлики</span>
+                      <svg class="price__icon-ok" width="31px" height="21px">
+                        <use xlink:href="#icon-yes"></use>
+                      </svg>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="price__field price__field--empty price__field--fill">
+                    Комментарии
+                  </td>
+                  <td class="price__field price__field--cancel">
+                    <div class="price__services">
+                      <span class="price__name">Комментарии</span>
+                      <svg class="price__icon-no" width="27px" height="26px">
+                        <use xlink:href="#icon-no"></use>
+                      </svg>
+                    </div>
+                  </td>
+                  <td class="price__field price__field--cancel">
+                    <div class="price__services">
+                      <span class="price__name">Комментарии</span>
+                      <svg class="price__icon-no" width="27px" height="26px">
+                        <use xlink:href="#icon-no"></use>
+                      </svg>
+                    </div>
+                  </td>
+                  <td class="price__field price__field--ok">
+                    <div class="price__services">
+                      <span class="price__name">Комментарии</span>
+                      <svg class="price__icon-ok" width="31px" height="21px">
+                        <use xlink:href="#icon-yes"></use>
+                      </svg>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="slider-items slider-items--none price__nav">
+              <label class="slider-items__btn" for="price-radio-1">1</label>
+              <label class="slider-items__btn slider-items__btn--active" for="price-radio-2">2</label>
+              <label class="slider-items__btn" for="price-radio-3">3</label>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="page-footer page-footer-index container">
       <a class="page-footer__logo" href="logo.html">

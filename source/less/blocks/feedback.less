@@ -1,0 +1,159 @@
+.feedback {
+  padding-bottom: 37px;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 42px;
+    margin-bottom: 29px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__call-us {
+    margin-bottom: 15px;
+  }
+
+  &__call-us-title {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  &__phone {
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+    color: @pink;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  &__write-us {
+    margin-bottom: 20px;
+  }
+
+  &__write-us-title {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    padding-left: 5px;
+  }
+
+  &__email {
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+    color: @pink;
+    text-align: center;
+    text-decoration: none;
+    padding-left: 5px;
+  }
+
+  &__location-title {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  &__address {
+    margin: 0;
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+    color: @pink;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .feedback {
+    padding-bottom: 27px;
+
+    &__title {
+      font-size: 40px;
+      padding-right: 21px;
+      padding-left: 21px;
+      padding-top: 5px;
+      line-height: 47px;
+      margin-bottom: 41px;
+    }
+
+    &__wrapper {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    &__call-us {
+      padding-left: 17px;
+      margin-bottom: 41px;
+    }
+
+    &__write-us {
+      padding-left: 32px;
+      margin-bottom: 41px;
+    }
+
+    &__write-us-title {
+      padding-bottom: 3px;
+    }
+
+    &__location {
+      padding: 0 165px;
+    }
+
+    &__location-title {
+      padding-bottom: 2px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback {
+    padding-bottom: 0;
+
+    &__title {
+      font-size: 50px;
+      line-height: 59px;
+      margin-top: 66px;
+      margin-bottom: 53px;
+      padding: 0 115px;
+    }
+
+    &__call-us {
+      order: 1;
+      padding: 0;
+      width: 266px;
+    }
+
+    &__call-us-title {
+      padding-bottom: 20px;
+    }
+
+    &__location {
+      order: 2;
+      padding: 0;
+      width: 295px;
+    }
+
+    &__location-title {
+      padding-bottom: 20px;
+    }
+
+    &__write-us {
+      order: 3;
+      padding: 0;
+      width: 268px;
+    }
+
+    &__write-us-title {
+      padding-bottom: 20px;
+    }
+  }
+}

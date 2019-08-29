@@ -1,0 +1,206 @@
+.form-upload {
+  &__left-block {
+    width: 280px;
+    padding-top: 20px;
+    padding-bottom: 33px;
+    margin: 0 auto;
+  }
+
+  &__right-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__inner {
+    border-bottom: 1px solid #dddfe0;
+  }
+
+  &__options-wrapper {
+    position: relative;
+    display: flex;
+    width: 240px;
+    margin: 0 auto;
+    padding-bottom: 72px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__options {
+    display: flex;
+  }
+
+  &__svg-icon {
+    cursor: pointer;
+    opacity: 0.3;
+    width: 50px;
+    height: 48px;
+  }
+
+  &__svg-icon--active {
+    opacity: 1;
+    fill: @pink;
+  }
+
+  &__svg-icon--last {
+    height: 32px;
+  }
+
+  &__actions {
+    width: 280px;
+    margin: 0 auto;
+    padding-top: 38px;
+    padding-bottom: 27px;
+  }
+
+  &__btn {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  &__btn--post {
+    margin-bottom: 12px;
+    padding: 16px 20px;
+    line-height: 18px;
+    color: @pink;
+    background: @gray--light;
+    border-radius: 35px;
+    border: 3px solid @pink;
+    outline: none;
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+  }
+
+  &__btn--cancel {
+    margin-bottom: 12px;
+    color: rgba(40, 54, 69, 0.1);
+    background: @gray--light;
+    border: 3px solid #dddfe0;
+    outline: none;
+    padding: 16px 20px;
+    line-height: 18px;
+    border-radius: 35px;
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-upload {
+    display: flex;
+    justify-content: space-between;
+    background: @gray--light;
+
+    &__left-block {
+      width: 300px;
+      padding: 57px 0 47px;
+      margin-left: 0;
+    }
+
+    &__right-block {
+      width: 275px;
+    }
+
+    &__inner {
+      margin-bottom: 63px;
+      margin-top: -5px;
+      border-bottom: none;
+    }
+
+    &__options-wrapper {
+      width: 100%;
+      padding-bottom: 0;
+      justify-content: space-between;
+      border-bottom: none;
+    }
+
+    &__options {
+      width: 275px;
+      padding: 17px 18px 22px 0;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #dddfe0;
+      margin-bottom: 10px;
+    }
+
+    &__svg-icon {
+      opacity: 1;
+      fill: @pink;
+      width: 28px;
+      height: 22px;
+    }
+
+    &__svg-icon--last {
+      height: 16px;
+    }
+
+    &__actions {
+      width: 260px;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__btn--post {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+
+    &__btn--cancel {
+      width: 100%;
+      margin-bottom: 0
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-upload {
+    padding: 0 60px 0 80px;
+
+    &__left-block {
+      padding: 57px 0 50px;
+    }
+
+    &__right-block {
+      width: 410px;
+      padding: 46px 0 59px;
+      justify-content: space-between;
+    }
+
+    &__options {
+      width: 410px;
+      padding: 14px 0 13px;
+      margin-bottom: 2px;
+    }
+
+    &__svg-icon {
+      width: 48px;
+      height: 44px;
+    }
+
+    &__svg-icon--last {
+      height: 32px;
+    }
+
+    &__actions {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0;
+    }
+
+    &__btn--post {
+      width: 183px;
+      margin-bottom: 0;
+      margin-top: 24px;
+    }
+
+    &__btn--cancel {
+      width: 183px;
+      margin-top: 24px;
+    }
+  }
+}

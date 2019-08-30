@@ -74,6 +74,15 @@
     width: 100%;
   }
 
+  &__btn--post:hover {
+    color: @white;
+    background-color: @pink;
+  }
+
+  &__btn--post:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &__btn--cancel {
     margin-bottom: 12px;
     color: rgba(40, 54, 69, 0.1);
@@ -86,6 +95,18 @@
     font-size: 18px;
     font-weight: 700;
     width: 100%;
+  }
+
+  &__btn--cancel:hover {
+    color: @gray--dark;
+    border-color: @gray--dark;
+    opacity: 0.3;
+  }
+
+  &__btn--cancel:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @gray--dark;
+    opacity: 0.3;
   }
 }
 

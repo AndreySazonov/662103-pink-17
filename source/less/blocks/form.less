@@ -40,6 +40,14 @@
     font-weight: 400;
   }
 
+  &__input-text:hover {
+    border-color: @gray--dark;
+  }
+
+  &__input-text:active {
+    border-color: @pink;
+  }
+
   &__fieldset {
     margin: 0;
     padding: 0;
@@ -86,6 +94,14 @@
     border: 2px solid @gray;
     border-radius: 50%;
     z-index: 10;
+  }
+
+  &__label-radio:hover::before {
+    border-color: @gray--dark;
+  }
+
+  &__label-radio:active::before {
+    border-color: @pink;
   }
 
   &__input-radio:checked+.form-block__label-radio::after {
@@ -146,6 +162,14 @@
     border: 2px solid @gray;
     border-radius: 5px;
     z-index: 10;
+  }
+
+  &__label-checkbox:hover::before {
+    border-color: @gray--dark;
+  }
+
+  &__label-checkbox:active::before {
+    border-color: @pink;
   }
 
   &__input-checkbox:checked+.form-block__label-checkbox::after {

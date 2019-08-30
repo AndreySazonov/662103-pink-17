@@ -1,8 +1,38 @@
+.post-blog {
+  &--panorama {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "Панорама дня";
+      margin: auto;
+      top: 0;
+      bottom: auto;
+      left: auto;
+      right: 0;
+      width: 140px;
+      height: 36px;
+      font-size: 12px;
+      line-height: 36px;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+      background: @pink;
+      color: @white;
+      z-index: 30;
+    }
+  }
+}
+
 @media (min-width: @tablet-width) {
   .post-blog {
     &--panorama {
       width: 100%;
       margin-bottom: 50px;
+
+      &::before {
+        top: 57px;
+      }
     }
   }
 }
@@ -12,6 +42,10 @@
     &--panorama {
       width: 940px;
       margin-bottom: 47px;
+
+      &::before {
+        top: 54px;
+      }
     }
   }
 }

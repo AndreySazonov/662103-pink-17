@@ -1,0 +1,47 @@
+.form-about {
+  padding: 44px 0 24px;
+  background: @white;
+  text-align: center;
+
+  &__text {
+    width: 290px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    color: @gray--dark;
+  }
+
+  &__text-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-about {
+    padding-top: 93px;
+    padding-bottom: 72px;
+
+    &__text {
+      font-size: 18px;
+      line-height: 30px;
+      font-weight: 400;
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    &__text-hidden {
+      display: inline;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-about {
+    padding-bottom: 78px;
+
+    &__text {
+      width: 800px;
+    }
+  }
+}

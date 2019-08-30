@@ -52,11 +52,9 @@
   }
 }
 
-
-
-.comment #comment-radio-1:checked~.comment__nav label[for=comment-radio-1],
-.comment #comment-radio-2:checked~.comment__nav label[for=comment-radio-2],
-.comment #comment-radio-3:checked~.comment__nav label[for=comment-radio-3] {
+.comment #comment-radio-1:checked ~ .comment__nav label[for="comment-radio-1"],
+.comment #comment-radio-2:checked ~ .comment__nav label[for="comment-radio-2"],
+.comment #comment-radio-3:checked ~ .comment__nav label[for="comment-radio-3"] {
   background-color: @white;
   border: 3px solid @gray--dark;
   opacity: 1;
@@ -98,7 +96,7 @@
     margin: 0 auto;
     padding-top: 116px;
     padding-bottom: 34px;
-    background-image: url(../img/icon-quotes.svg);
+    background-image: url("../img/icon-quotes.svg");
     background-size: 80px 63px;
     background-repeat: no-repeat;
     background-position: 50% 5px;

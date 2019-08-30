@@ -2,7 +2,7 @@
   padding-top: 91px;
   padding-bottom: 26px;
   background-color: @gray--light;
-  background-image: url(../img/bg-triangle-white-2.svg);
+  background-image: url("../img/bg-triangle-white-2.svg");
   background-size: 101% auto;
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -172,25 +172,25 @@
       align-items: center;
     }
   }
-
-  #price-radio-1:checked~.price__list {
+/*stylelint-disable*/
+  #price-radio-1:checked ~ .price__list {
     transform: translateX(280px);
     transition: 0.5s;
   }
-
-  #price-radio-2:checked~.price__list {
+/*stylelint-disable*/
+  #price-radio-2:checked ~ .price__list {
     transform: translateX(0);
     transition: 0.5s;
   }
-
-  #price-radio-3:checked~.price__list {
+/*stylelint-disable*/
+  #price-radio-3:checked ~ .price__list {
     transform: translateX(-280px);
     transition: 0.5s;
   }
-
-  #price-radio-1:checked~.price__nav label[for=price-radio-1],
-  #price-radio-2:checked~.price__nav label[for=price-radio-2],
-  #price-radio-3:checked~.price__nav label[for=price-radio-3] {
+/*stylelint-disable*/
+  #price-radio-1:checked ~ .price__nav label[for="price-radio-1"],
+  #price-radio-2:checked ~ .price__nav label[for="price-radio-2"],
+  #price-radio-3:checked ~ .price__nav label[for="price-radio-3"] {
     background-color: @white;
     border: 3px solid @gray--dark;
     opacity: 1;

@@ -104,7 +104,7 @@
     border-color: @pink;
   }
 
-  &__input-radio:checked+.form-block__label-radio::after {
+  &__input-radio:checked + .form-block__label-radio::after {
     content: "";
     position: absolute;
     margin: auto;
@@ -172,7 +172,7 @@
     border-color: @pink;
   }
 
-  &__input-checkbox:checked+.form-block__label-checkbox::after {
+  &__input-checkbox:checked + .form-block__label-checkbox::after {
     content: "";
     position: absolute;
     margin: auto;
@@ -183,7 +183,7 @@
     width: 22px;
     height: 16px;
     z-index: 10;
-    background-image: url(../img/icon-yes.svg);
+    background-image: url("../img/icon-yes.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -296,7 +296,7 @@
       font-size: 14px;
       line-height: 30px;
       font-weight: 400;
-      transform: translate(-50%,0);
+      transform: translate(-50%, 0);
     }
 
     &__app {
@@ -328,7 +328,7 @@
       bottom: 0;
       left: auto;
       right: 1px;
-      background-image: url(../img/icon-phone.svg);
+      background-image: url("../img/icon-phone.svg");
       background-color: @gray;
       background-repeat: no-repeat;
       background-position: center;
@@ -338,12 +338,8 @@
       cursor: pointer;
     }
 
-    &__contact-item {
-      padding-bottom: 18px;
-    }
-
     &__wrapper-icon--email::after {
-      background-image: url(../img/icon-mail.svg);
+      background-image: url("../img/icon-mail.svg");
       background-color: @gray;
       background-repeat: no-repeat;
       background-position: center;

@@ -1,4 +1,6 @@
 .reviews {
+  margin-bottom: 42px;
+
   &__block {
     padding: 12px 17px 20px;
     display: flex;
@@ -46,6 +48,19 @@
     text-transform: uppercase;
     margin: 0;
     padding-left: 32px;
+    position: relative;
+  }
+
+  &__assessment::before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    left: 0;
+    top: 4px;
+    background-image: url("../img/icon-heart.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 
   &__photo {
@@ -73,6 +88,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 49px;
 
     &__block {
       padding: 19px 27px 22px;
@@ -82,23 +98,30 @@
       width: 48%;
       margin-bottom: 3%;
       min-height: 455px;
-      // padding-bottom: 25px;
     }
 
     &__photo {
-      height: 300px;//Временное решение
+      height: 300px;
     }
 
     &__assessment {
       padding: 0;
     }
 
+    &__assessment::before {
+      right: 4px;
+      left: inherit;
+    }
+
+    &__block--panorama .reviews__assessment::before {
+      top: 30px;
+    }
+
     &__users-photo--panorama img {
-      height: 509px;//Временное решение
+      height: 509px;
     }
 
     &__block--panorama {
-      // display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       padding: 0 27px 0;
@@ -126,6 +149,8 @@
 
 @media (min-width: @desktop-width) {
   .reviews {
+    margin-bottom: 0;
+
     &__list {
       width: 32%;
       margin-bottom: 6%;
@@ -147,6 +172,10 @@
     &__block--panorama .reviews__assessment {
       padding-top: 22px;
       padding-right: 35px;
+    }
+
+    &__block--panorama .reviews__assessment::before {
+      top: 26px;
     }
   }
 }

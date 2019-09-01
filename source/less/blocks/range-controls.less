@@ -1,0 +1,96 @@
+.range-controls {
+  position: relative;
+  display: none;
+
+  &--active {
+    position: absolute;
+    margin: auto;
+    top: auto;
+    bottom: 34px;
+    left: 0;
+    right: 0;
+    content: none;
+    display: block;
+    z-index: 50;
+  }
+
+  &__bar {
+    width: 240px;
+    height: 2px;
+    margin: 0 auto;
+    background: @gray--dark;
+  }
+
+  &__toggle {
+    content: "";
+    position: absolute;
+    top: -6px;
+    right: 35px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #d22856;
+    background: #f2f2f2;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  &__toggle:active {
+    background-color: @pink;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .range-controls {
+    display: block;
+
+    &--active {
+      position: relative;
+      margin: 0;
+      bottom: 0;
+    }
+
+    &__bar {
+      display: block;
+      width: 202px;
+    }
+
+    &--last {
+      height: 16px;
+    }
+
+    &__toggle--crop {
+      right: 41px;
+    }
+
+    &__toggle--fill {
+      right: 163px;
+    }
+
+    &__toggle--contrast {
+      right: 92px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .range-controls {
+    margin-right: 30px;
+
+    &__bar {
+      width: 288px;
+    }
+
+    &__toggle--crop {
+      right: 203px;
+    }
+
+    &__toggle--fill {
+      right: 27px;
+    }
+
+    &__toggle--contrast {
+      right: 114px;
+    }
+  }
+}

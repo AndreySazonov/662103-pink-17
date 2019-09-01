@@ -38,6 +38,24 @@
       font-weight: normal;
     }
 
+    &__item--active {
+      position: relative;
+    }
+
+    &__item--active .site-list__link::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      top: 54px;
+      left: 82px;
+      right: 0;
+      background-color: @white;
+    }
+
+    &__item--active .site-list__link:hover::after {
+      background-color: @pink;
+    }
+
     &__item {
       border: none;
     }

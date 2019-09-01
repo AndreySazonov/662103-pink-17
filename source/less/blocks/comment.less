@@ -2,6 +2,23 @@
   position: relative;
   margin-top: -42px;
   background-color: @white;
+  padding-bottom: 66px;
+  margin-bottom: 20px;
+
+  &__toggle {
+    display: none;
+  }
+
+  &__arrow {
+    position: absolute;
+    fill: #bec2c7;
+    top: 0;
+    z-index: 10;
+  }
+
+  &__switcher {
+    display: none;
+  }
 
   &__author {
     padding-top: 43px;
@@ -26,13 +43,31 @@
     color: @paragraph;
     padding-top: 1px;
   }
+
+  &__nav {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+/*stylelint-disable*/
+.comment #comment-radio-1:checked ~ .comment__nav label[for="comment-radio-1"],
+.comment #comment-radio-2:checked ~ .comment__nav label[for="comment-radio-2"],
+.comment #comment-radio-3:checked ~ .comment__nav label[for="comment-radio-3"] {
+  background-color: @white;
+  border: 3px solid @gray--dark;
+  opacity: 1;
 }
 
 @media (min-width: @tablet-width) {
   .comment {
-    display: flex;
-    flex-direction: column-reverse;
     margin: 0;
+
+    &__item {
+      display: flex;
+      flex-direction: column-reverse;
+    }
 
     &__author {
       padding-top: 35px;
@@ -60,6 +95,54 @@
   .comment {
     margin: 0 auto;
     padding-top: 116px;
+    padding-bottom: 34px;
+    background-image: url("../img/icon-quotes.svg");
+    background-size: 80px 63px;
+    background-repeat: no-repeat;
+    background-position: 50% 5px;
+
+    &__toggle {
+      display: block;
+      position: absolute;
+      top: 143px;
+      width: 60px;
+      height: 42px;
+      font-size: 0;
+      line-height: 0;
+      border: none;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-position: 0 50%;
+      background-size: 22px 41px;
+      outline: none;
+      opacity: 0.3;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    &__toggle:hover {
+      opacity: 0.6;
+    }
+
+    &__toggle:active {
+      opacity: 0.1;
+    }
+
+    &__toggle--prev {
+      left: 10px;
+    }
+
+    &__toggle--prev .comment__arrow {
+      left: 0;
+    }
+
+    &__toggle--next {
+      right: 10px;
+    }
+
+    &__toggle--next .comment__arrow {
+      right: 0;
+    }
 
     &__text {
       padding: 0 80px;

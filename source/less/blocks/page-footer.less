@@ -1,29 +1,135 @@
 .page-footer {
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  padding-top: 41px;
+
+  &--hide {
+    display: none;
+  }
+
+  &--inner {
+    padding-top: 40px;
+    padding-bottom: 46px;
+  }
+
+  &__copyright {
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   &__logo {
-    display: block;
-    margin-top: 40px;
-    text-align: center;
+    width: 147px;
+    height: 40px;
   }
-}
 
-.page-footer-index {
-  display: none;
+  &__logo:hover .page-footer__logo-image {
+    fill: @pink;
+  }
+
+  &__logo:active .page-footer__logo-image {
+    fill: @gray--dark;
+    opacity: 0.3;
+  }
+
+  &__logo--copyright {
+    display: inline-block;
+    vertical-align: middle;
+    position: static;
+    margin-bottom: 37px;
+  }
+
+  &__logo-pink-blue-desktop {
+    display: none;
+  }
+
+  &__developer {
+    position: relative;
+  }
+
+  &__copyright-link {
+    font-size: 14px;
+    line-height: 18px;
+    padding-right: 42px;
+    color: @gray--dark;
+    text-decoration: none;
+  }
+
+  &__logo-htmlacademy {
+    position: absolute;
+    right: 0;
+    top: -4px;
+    fill: @pink;
+  }
+
+  &__logo-htmlacademy:hover {
+    fill: @gray--dark;
+  }
+
+  &__logo-htmlacademy:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
-  .page-footer-index {
-    display: flex;
-  }
-
   .page-footer {
-    flex-direction: row;
-    justify-content: space-between;
+    padding-top: 2px;
 
-    &__logo {
-      margin: 0;
+    &--hide {
+      display: block;
+    }
+
+    &--form {
+      padding-bottom: 0;
+    }
+
+    &__copyright {
+      width: 620px;
+      flex-direction: row;
+      align-items: flex-start;
+      padding-top: 36px;
+      padding-bottom: 37px;
+    }
+
+    &__developer {
+      padding-top: 12px;
+      text-align: left;
+    }
+
+    &__logo-htmlacademy {
+      top: 8px;
+    }
+
+    &--photo {
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    &__copyright {
+      width: 940px;
+      padding-top: 70px;
+    }
+
+    &__copyright-link {
+      padding-right: 41px;
+      font-size: 18px;
+    }
+
+    &__copyright--form {
+      padding-top: 47px;
+    }
+
+    &__logo-pink-blue-mobile {
+      display: none;
+    }
+
+    &__logo-pink-blue-desktop {
+      display: block;
     }
   }
 }

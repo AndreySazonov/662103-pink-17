@@ -1,0 +1,30 @@
+.slider-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 21px;
+
+  &__btn {
+    font-size: 0;
+    line-height: 0;
+    width: 6px;
+    height: 6px;
+    margin-right: 17px;
+    background-color: @gray--dark;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.3;
+  }
+
+  &__btn:first-child {
+    margin-left: 13px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider-items {
+    display: none;
+  }
+}

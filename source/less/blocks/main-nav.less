@@ -138,7 +138,8 @@
     }
 
     &__logo {
-      margin-top: 23px;
+      margin-top: 15px;
+      padding-top: 8px;
     }
 
     &__toggle {
@@ -146,7 +147,7 @@
     }
 
     &__logo-wrapper {
-      padding-bottom: 42px;
+      padding-bottom: 34px;
     }
 
     &__logo-image {
@@ -159,6 +160,9 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
+    display: flex;
+    justify-content: space-between;
+
     &__logo-pink-white-desktop {
       display: block;
     }
@@ -167,9 +171,6 @@
     &__logo-pink-white-tablet {
       display: none;
     }
-
-    display: flex;
-    justify-content: space-between;
 
     &__toggle {
       display: none;

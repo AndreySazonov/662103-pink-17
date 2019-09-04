@@ -2,11 +2,6 @@
   padding: 0;
   position: relative;
 
-  &__logo-pink-white-tablet,
-  &__logo-pink-white-desktop {
-    display: none;
-  }
-
   &__logo-wrapper {
     display: flex;
     justify-content: space-between;
@@ -143,15 +138,6 @@
 
 @media (min-width: @tablet-width) {
   .main-nav {
-    &__logo-pink-white-tablet {
-      display: block;
-    }
-
-    &__logo-pink-white-mobile,
-    &__logo-pink-white-desktop {
-      display: none;
-    }
-
     &__logo {
       margin-top: 15px;
       padding-top: 8px;
@@ -177,15 +163,6 @@
   .main-nav {
     display: flex;
     justify-content: space-between;
-
-    &__logo-pink-white-desktop {
-      display: block;
-    }
-
-    &__logo-pink-white-mobile,
-    &__logo-pink-white-tablet {
-      display: none;
-    }
 
     &__toggle {
       display: none;

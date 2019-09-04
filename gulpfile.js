@@ -80,13 +80,6 @@ gulp.task("html", function() {
   .pipe(gulp.dest("build"));
 });
 
-gulp.task("build", gulp.series (
-  "clean",
-  "copy",
-  "css",
-  "html"
-));
-
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -106,4 +99,5 @@ gulp.task("refresh", function (done) {
   done();
 });
 
+gulp.task("build", gulp.series("clean", "copy", "css", "html"));
 gulp.task("start", gulp.series("build", "server"));

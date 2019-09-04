@@ -5,11 +5,11 @@
   padding-bottom: 66px;
   margin-bottom: 20px;
 
-  &__toggle {
+  &__arrow {
     display: none;
   }
 
-  &__arrow {
+  &__arrow-icon {
     position: absolute;
     fill: #bec2c7;
     top: 0;
@@ -101,7 +101,7 @@
     background-repeat: no-repeat;
     background-position: 50% 5px;
 
-    &__toggle {
+    &__arrow {
       display: block;
       position: absolute;
       top: 143px;
@@ -120,27 +120,27 @@
       z-index: 1;
     }
 
-    &__toggle:hover {
+    &__arrow:hover {
       opacity: 0.6;
     }
 
-    &__toggle:active {
+    &__arrow:active {
       opacity: 0.1;
     }
 
-    &__toggle--prev {
+    &__arrow--prev {
       left: 10px;
     }
 
-    &__toggle--prev .comment__arrow {
+    &__arrow--prev .comment__arrow-icon {
       left: 0;
     }
 
-    &__toggle--next {
+    &__arrow--next {
       right: 10px;
     }
 
-    &__toggle--next .comment__arrow {
+    &__arrow--next .comment__arrow-icon {
       right: 0;
     }
 

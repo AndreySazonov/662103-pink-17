@@ -1,17 +1,15 @@
 .pop-up {
   position: fixed;
-  width: 100%;
-  top: 25%;
+  width: 320px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding-top: 40px;
   padding-bottom: 50px;
   text-align: center;
   background-color: @white;
   box-shadow: 0 25px 15px -25px rgba(0, 0, 0, 0.2);
   z-index: 100;
-
-  &:first-child {
-    margin-top: 0;
-  }
 
   &--close {
     display: none;
@@ -70,8 +68,6 @@
     box-sizing: border-box;
     width: 460px;
     padding-top: 36px;
-    left: 50%;
-    margin-left: -230px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1),
       -20px 0 30px -15px rgba(0, 0, 0, 0.1),
       20px 0 30px -15px rgba(0, 0, 0, 0.1),
@@ -118,7 +114,6 @@
   .pop-up {
     &--success {
       width: 780px;
-      margin-left: -390px;
       padding-top: 40px;
     }
   }

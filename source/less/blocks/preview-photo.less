@@ -20,11 +20,14 @@
 
 @media (min-width: @desktop-width) {
   .preview-photo {
+    display: block;
+    position: relative;
+
     &::before {
       width: 940px;
       margin-top: 46px;
       background-image: url("../img/iphone-hand-desktop@1x.png");
-      background-size: 1050px 645px;
+      background-size: 1050px 630px;
       background-position: 15px 53px;
 
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {

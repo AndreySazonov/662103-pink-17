@@ -4,9 +4,12 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
     <script>/*Picture element HTML5 shiv*/document.createElement( "picture" );</script>
-    <script src="js/picturefill.js"asynk></script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <svg version="1.1" style="display: none">
@@ -131,7 +134,7 @@
       <div class="main-nav-wrapper">
         <nav class="main-nav main-nav--closed main-nav--nojs container"> <!-- main-nav--opened - открытое меню, main-nav--closed - закрытое меню -->
           <div class="main-nav__logo-wrapper">
-            <a class="main-nav__logo" href="index.html">
+            <a class="main-nav__logo" href="index.html" title="Переход на главную страницу">
               <svg class="main-nav__logo-image" width="75px" height="22px">
                 <use xlink:href="#logo"></use>
               </svg>
@@ -163,15 +166,15 @@
         </section>
         <section class="download-applications">
           <h1 class="download-applications__title">Взгляните на жизнь иначе!</h1>
-          <a class="download-applications__toggle" href="https://www.apple.com/ru/itunes">Скачать приложение</a>
+          <a class="download-applications__toggle" href="https://www.apple.com/ru/itunes" title="Переход в iTunes">Скачать приложение</a>
           <div class="download-applications__store">
-            <a class="download-applications__icon" href="https://www.apple.com/ru/itunes">
+            <a class="download-applications__icon" href="https://www.apple.com/ru/itunes" title="Переход в iTunes">
               <img class="download-applications__apple" src="img/logo-apple.svg" alt="Иконка Apple">
             </a>
-            <a class="download-applications__icon" href="https://play.google.com/store">
+            <a class="download-applications__icon" href="https://play.google.com/store" title="Переход в Google Play">
               <img class="download-applications__android" src="img/logo-android.svg" alt="Иконка Android">
             </a>
-            <a class="download-applications__icon" href="https://www.microsoft.com/store/">
+            <a class="download-applications__icon" href="https://www.microsoft.com/store/" title="Переход в Microsoft">
               <img class="download-applications__windows" src="img/logo-microsoft.svg" alt="Иконка Windows">
             </a>
           </div>
@@ -408,30 +411,30 @@
     </main>
     <footer class="page-footer page-footer--hide">
       <section class="page-footer__copyright page-footer__copyright--show">
-        <a class="page-footer__logo page-footer__logo--copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="page-footer__logo page-footer__logo--copyright" href="https://htmlacademy.ru/intensive/adaptive"  title="Переход на страницу интенсива HTML Academy">
           <svg class="page-footer__logo-image" width="148" height="40">
             <use xlink:href="#logo-footer"></use>
           </svg>
         </a>
         <div class="social-links">
-          <a class="social-links__link" href="https://twitter.com">
+          <a class="social-links__link" href="https://twitter.com" title="Переход на страницу в Twitter">
             <svg class="social-links__icon social-links__icon--twitter" width="18px" height="15px">
               <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
-          <a class="social-links__link" href="https://ru-ru.facebook.com/">
+          <a class="social-links__link" href="https://ru-ru.facebook.com/" title="Переход на страницу в Facebook">
             <svg class="social-links__icon social-links__icon--facebook" width="9px" height="19px">
               <use xlink:href="#icon-facebook"></use>
             </svg>
           </a>
-          <a class="social-links__link" href="https://www.youtube.com">
+          <a class="social-links__link" href="https://www.youtube.com" title="Переход на страницу в YouTube">
             <svg class="social-links__icon social-links__icon--youtube" width="15px" height="14px">
               <use xlink:href="#icon-youtube"></use>
             </svg>
           </a>
         </div>
         <div class="page-footer__developer">
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru" title="Переход на сайт HTML Academy">
             Разработано
             <svg class="page-footer__logo-htmlacademy" width="28px" height="49px">
               <use xlink:href="#logo-htmlacademy"></use>

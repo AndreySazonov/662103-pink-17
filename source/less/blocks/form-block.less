@@ -60,10 +60,6 @@
     margin: 0 auto;
   }
 
-  &__input-radio {
-    display: none;
-  }
-
   &__label-radio {
     position: relative;
     display: block;
@@ -115,6 +111,10 @@
     border-radius: 50%;
   }
 
+  &__input-radio:focus + .form-block__label-radio {
+    box-shadow: 0 0 5px orange;
+  }
+
   &__contact-item {
     width: 100%;
     padding-bottom: 6px;
@@ -126,10 +126,6 @@
 
   &__progress-items {
     padding: 42px 0 0;
-  }
-
-  &__input-checkbox {
-    display: none;
   }
 
   &__label-checkbox {
@@ -184,6 +180,10 @@
     background-position: center;
   }
 
+  &__input-checkbox:focus + .form-block__label-checkbox {
+    box-shadow: 0 0 5px orange;
+  }
+
   &__textarea {
     padding-top: 19px;
   }
@@ -203,6 +203,8 @@
     resize: none;
   }
 }
+
+
 
 @media only screen and (max-width: 659px) {
   .form-block {
